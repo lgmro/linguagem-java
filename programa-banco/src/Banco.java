@@ -28,9 +28,20 @@ public class Banco {
         System.out.print ("Qual o valor a ser debitado ou creditado? ");
         value = variablenumeric.nextFloat();
 
+        switch (opcion) {
+            case 'D':
+                debit (balance, value);
+                break;
 
 
 
+        }
+
+
+    }
+
+    static void debit (float x, float y) {
+        System.out.println (x - y);
     }
 
 }
