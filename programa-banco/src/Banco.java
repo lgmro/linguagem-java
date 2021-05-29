@@ -30,9 +30,9 @@ public class Banco {
 
         switch (opcion) {
             case 'D':
+                System.out.print ("A conta " + account);
                 debit (balance, value);
-                break;
-
+                
 
 
         }
@@ -41,7 +41,15 @@ public class Banco {
     }
 
     static void debit (float x, float y) {
-        System.out.println (x - y);
+
+        if (x-y > 0 ) {
+            System.out.print (" agora tem o saldo final de: R$ ");
+            System.out.println (x-y);
+
+        } else {
+
+            System.out.println (" não possui saldo suficiente para essa operação.");
+        }
     }
 
 }
