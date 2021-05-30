@@ -50,6 +50,9 @@ public class Banco {
                 System.out.print ("A conta " + account);
                 funcao.credit (balance, value);
                 break;
+            default:
+                System.out.println ("Operação inválida.");
+                break;
         }
 
     }
