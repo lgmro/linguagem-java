@@ -28,11 +28,15 @@ public class Banco {
         System.out.print ("Qual o valor a ser debitado ou creditado? ");
         value = variablenumeric.nextFloat();
 
+        Funcoes debita = new Funcoes();
+
         switch (opcion) {
             case 'D':
                 System.out.print ("A conta " + account);
-                debit (balance, value);
-                
+                debita.debit (balance, value);
+
+                //debit (balance, value);
+
 
 
         }
@@ -40,7 +44,7 @@ public class Banco {
 
     }
 
-    static void debit (float x, float y) {
+    /*static void debit (float x, float y) {
 
         if (x-y > 0 ) {
             System.out.print (" agora tem o saldo final de: R$ ");
@@ -50,6 +54,6 @@ public class Banco {
 
             System.out.println (" não possui saldo suficiente para essa operação.");
         }
-    }
+    }*/
 
 }
