@@ -28,8 +28,8 @@ public class ExecucaoAgenda {
 
                 addcontatos[i] = addcontato;
             }
+            minhaagenda.setContatosagenda(addcontatos);
 
-                
         }
 
 }
