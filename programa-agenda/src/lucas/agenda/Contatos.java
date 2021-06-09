@@ -25,7 +25,7 @@ public class Contatos {
         return this.telefone;
     }
 
-    public void setEmail(int telefone) {
+    public void setTelefone(int telefone) {
         this.telefone = telefone;
     }
 
