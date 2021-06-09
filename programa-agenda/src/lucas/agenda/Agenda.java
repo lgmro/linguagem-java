@@ -23,4 +23,14 @@ public class Agenda {
 
     }
 
+    public String obterInformacao() {
+        String info = this.nome + "\n";
+        for (Contatos cont:contatosagenda) {
+            info += cont.obterinfo();
+        }
+
+        return info;
+
+    }
+
 }

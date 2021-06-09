@@ -29,4 +29,11 @@ public class Contatos {
         this.telefone = telefone;
     }
 
+    public String obterinfo() {
+        return "Nome: " + this.nomecontato + "; "
+                + "E-mail: " + this.email + "; "
+                + "Telefone: " + this.telefone + "\n";
+
+    }
+
 }

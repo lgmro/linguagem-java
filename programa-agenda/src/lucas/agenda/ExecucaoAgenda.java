@@ -30,6 +30,8 @@ public class ExecucaoAgenda {
             }
             minhaagenda.setContatosagenda(addcontatos);
 
+            System.out.println(minhaagenda.obterInformacao());
+
         }
 
 }
