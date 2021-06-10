@@ -24,11 +24,14 @@ public class Agenda {
     }
 
     public String obterInformacao() {
-        String info = this.nome + "\n";
+        String info = "";
         for (Contatos cont:contatosagenda) {
             info += cont.obterinfo();
         }
 
+        System.out.println("----------------------------");
+        System.out.println("    " + this.nome + "   ");
+        System.out.println("----------------------------");
         return info;
 
     }

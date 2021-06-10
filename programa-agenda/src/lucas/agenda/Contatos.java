@@ -30,9 +30,10 @@ public class Contatos {
     }
 
     public String obterinfo() {
-        return "Nome: " + this.nomecontato + "; "
-                + "E-mail: " + this.email + "; "
-                + "Telefone: " + this.telefone + "\n";
+        return  "\n"+ "Nome:"  + this.nomecontato + "; \n"
+                + "E-mail: " + this.email + "; \n"
+                + "Telefone: " + this.telefone +
+                "\n----------------------------";
 
     }
 
